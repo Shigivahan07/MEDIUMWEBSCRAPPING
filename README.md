@@ -4,7 +4,6 @@
   <title>Article Scraper</title>
 </head>
 <body>
-  <h1>Article Scraper</h1>
   <p>This project is a simple React application that allows users to search for articles by a specific tag. It scrapes articles from a backend service and displays the results in a neat and responsive layout.</p>
 
   <h2>Features</h2>
@@ -36,10 +35,7 @@
   <h3>Installation</h3>
   <ol>
     <li>Clone the repository:
-      <pre><code>git clone https://github.com/yourusername/articlescraper.git</code></pre>
-    </li>
-    <li>Navigate to the project directory:
-      <pre><code>cd articlescraper</code></pre>
+      <pre><code>git clone https://github.com/Shigivahan07/mediumwebscrapping.git</code></pre>
     </li>
     <li>Install the dependencies:
       <pre><code>npm install</code></pre>
@@ -47,8 +43,11 @@
   </ol>
 
   <h3>Running the Application</h3>
-  <ol>
-    <li>Start the development server:
+    <ol>
+    <li>Start the backend server:
+      <pre><code>node server.js</code></pre>
+    </li>
+    <li>Start the frontend development server:
       <pre><code>npm start</code></pre>
     </li>
     <li>Open your browser and go to:
@@ -56,7 +55,14 @@
     </li>
   </ol>
 
-  <h2>Project Structure</h2>
+<h2>Project Structure</h2>
+    <h3>Backend</h3>
+  <ul>
+    <li><code>scraper.js</code> - Script to scrape articles.</li>
+    <li><code>server.js</code> - Express server to handle API requests.</li>
+  </ul>
+
+  <h3>Frontend</h3>
   <ul>
     <li><code>src/</code>
       <ul>
@@ -71,14 +77,27 @@
             <li><code>useFetchArticles.js</code> - Custom hook to fetch articles from the backend.</li>
           </ul>
         </li>
+        <li><code>pages/</code>
+          <ul>
+            <li><code>HomePage.js</code> - Main page component.</li>
+          </ul>
+        </li>
+        <li><code>services/</code>
+          <ul>
+            <li><code>api.js</code> - Service to handle API requests.</li>
+          </ul>
+        </li>
         <li><code>styles/</code>
           <ul>
             <li><code>App.css</code> - Global styles for the application.</li>
+            <li><code>Article.css</code> - Styles for article components.</li>
             <li><code>form.css</code> - Styles for the search form.</li>
+            <li><code>input.css</code> - Styles for the input fields.</li>
           </ul>
         </li>
         <li><code>App.js</code> - Main application component.</li>
         <li><code>index.js</code> - Entry point of the application.</li>
+        <li><code>index.css</code> - Global CSS for the application.</li>
       </ul>
     </li>
   </ul>
@@ -101,8 +120,5 @@
   </ol>
   </pre>
 
-  <h2>License</h2>
-
-  <p>Feel free to modify and enhance the application as per your requirements. Contributions are welcome!</p>
 </body>
 </html>
