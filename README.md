@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Article Scraper</title>
 </head>
 <body>
+  <h1>Article Scraper</h1>
   <p>This project is a simple React application that allows users to search for articles by a specific tag. It scrapes articles from a backend service and displays the results in a neat and responsive layout.</p>
 
   <h2>Features</h2>
